@@ -219,6 +219,48 @@ main{
 .sponsors-img-container img{
     width: 165px;
 }
+
+/* footer styles */
+#no{
+    color: #4EC5F7;
+}
+#na{
+    color: hsl(0, 71%, 70%);
+}
+
+footer{
+    width: 100%;
+    background-color: #f2e8e8;
+    padding-top: 70px;
+}
+
+.footer-head{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.footer-h3{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    
+}
+.footer-p{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.copy-class{
+    display: flex;
+    justify-content: center;
+}
+
 /* responsive styles media queries */
 
 /* mobile device */
@@ -250,6 +292,16 @@ main{
     .ten-years-badge{
         position: static;
         max-width: 300px;
+    }
+
+    .footer-h3{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-p{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 50%;
     }
 }
 
