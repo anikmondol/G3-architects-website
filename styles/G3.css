@@ -6,6 +6,11 @@
     border-radius: 8px;
     border: 0px;
     background-color: #FF900E;
+    color: #FFF;
+    font-size: 1.25rem;
+    padding: 20px 25px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 
@@ -30,7 +35,7 @@ nav{
 }
 
 .nav-title{
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-weight: 700px;
     color: #131313;
 }
@@ -41,7 +46,7 @@ nav > ul{
 
 nav li{
     list-style: none;
-    margin-left: 30px;
+    margin-right: 30px;
     font-weight: 500;
     font-size: 1rem;
 }
@@ -64,4 +69,74 @@ nav li a{
 }
 .banner-description{
     color:  #727272;
+}
+
+.banner img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* responsive styles media queries */
+
+/* mobile device */
+@media screen and (max-width: 576px){
+    header{
+        padding: 20px;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+   
+}
+
+/* tablet or medium device */
+
+@media screen and (min-width: 576px) and (max-width: 960px){
+    header{
+        padding: 50px;
+    }
+    
+    
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* main styles */
+
+main{
+    max-width: 1440px;
+    margin:0 auto;
+}
+
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+
+.teams-img-contaner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.teams-content{
+    padding: 0 70px;
+}
+
+.teams-title{
+    font-size: 2.8rem;
+}
+
+.teams-title, .Quick-list{
+    color: #727272; 
+    font-weight: 500;  
+}
+
+.nav-title, .text-Features{
+    color: #FF900E;
+    font-size: 2.8rem;
+    font-weight: 700;
 }
